@@ -8,9 +8,14 @@ Log requests in [`micro`](https://github.com/zeit/micro) with [`pino`](https://g
 
 ```javascript
 const microPino = require('micro-pino');
-const pino = require('pino')();
+const pino = require('pino');
 
-module.exports = microPino(pino)(async (res, req) => 'Hello world!');
+const logger = pino({
+  name: 'my-app',
+  serializers: pino.stdSerializers
+});
+
+module.exports = microPino( logger)(async (res, req) => 'Hello world!');
 ```
 
 ```json
