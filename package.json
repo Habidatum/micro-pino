@@ -1,0 +1,28 @@
+{
+  "name": "micro-pino",
+  "version": "1.0.0",
+  "description": "Pino logger for micro",
+  "main": "index.js",
+  "repository": "https://github.com/habidatum/micro-pino",
+  "author": "Anton Vasin <antonvasin@me.com>",
+  "license": "MIT",
+  "keywords": [
+    "micro",
+    "pino",
+    "log",
+    "logger",
+    "microservice"
+  ],
+  "devDependencies": {
+    "prettier": "^1.13.7"
+  },
+  "dependencies": {
+    "uuid": "^3.3.0"
+  },
+  "peerDependencies": {
+    "pino": ">= 1"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
